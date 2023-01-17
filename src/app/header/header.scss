@@ -1,0 +1,176 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .logotype {
+    width: 50px;
+    height: 50px;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 80%;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      li {
+        a {
+          color: #868686;
+          padding: 10px 20px;
+          background-color: transparent;
+          font-family: Lato, sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+
+          &:hover {
+            color: #fff;
+            background-color: #ffbb42;
+            padding: 10px 20px;
+            transition: ease-in-out 0.3s;
+            border-radius: 3px;
+          }
+
+          &:active {
+            color: #fff;
+            background-color: #ffbb42;
+            padding: 10px 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .menu-mobile {
+    display: none;
+  }
+}
+
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 30px;
+  display: none;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #868686;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #709dca;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #868686;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #fff;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  margin-top: -20px;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+
+  a {
+    color: #868686;
+  }
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 1200px) {
+  .header .menu {
+    width: 100%;
+
+
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .header {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    z-index: 5;
+
+    .logotype {
+      margin-left: 36px;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .menu-mobile {
+      display: flex;
+    }
+  }
+
+
+  .bm-burger-button {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 795px) {
+  .header {
+    .logotype {
+      margin-left: 20px;
+    }
+
+    .bm-burger-button {
+      right: 20px;
+    }
+  }
+}

@@ -1,0 +1,134 @@
+@import-normalize;
+@import 'fonts';
+@import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, p {
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:focus {
+     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+     -webkit-tap-highlight-color: transparent;
+   }
+}
+
+button {
+  &:focus {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+input {
+  font-family: OpenSans, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 20px 0;
+  background-color: #fff;
+}
+
+.home {
+  background-color: #709dca;
+  padding: 110px 0;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 30px;
+  font-family: Gothem, sans-serif;
+  font-weight: 900;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-family: Gothem, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.bg_white {
+  background-color: #fff;
+  padding: 150px 0;
+}
+
+.bg_yellow {
+  background-color: #ffbb42;
+  padding: 150px 0;
+}
+
+.services {
+  padding-top: 200px;
+}
+
+footer {
+  background-color: #709dca;
+  padding: 15px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    padding: 0 36px;
+  }
+}
+
+@media screen and (max-width: 795px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  .services {
+    padding: 80px 0;
+  }
+
+  .bg_white {
+    padding: 80px 0;
+  }
+
+  .bg_yellow {
+    padding: 80px 0;
+  }
+}

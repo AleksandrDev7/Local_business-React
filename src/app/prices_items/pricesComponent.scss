@@ -1,0 +1,117 @@
+.block-product {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+  width: 100%;
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 30px 50px 30px;
+    background-color: #fff;
+    font-family: Lato, sans-serif;
+    width: 29%;
+    border: 1px solid #ccd5df;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: .3s ease-in-out;
+      background-color: #709dca;
+      z-index: 3;
+    }
+
+    &:hover .product-title > .title,
+    &:hover .product-title > span,
+    &:hover .product-title > p {
+      color: #fff;
+    }
+
+    &:hover .product-properties > p {
+      border-color: #8eb8e2;
+      color: #c2e1ff;
+    }
+
+    &-title {
+      text-align: center;
+
+      .title {
+        font-size: 25px;
+        font-weight: lighter;
+        color: #818b95;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+      }
+
+        span {
+          color:#ffbb42;
+          font-weight: bold;
+          font-size: 60px;
+
+          sup {
+            font-size: 30px;
+          }
+        }
+
+
+      p {
+        margin-top: -10px;
+        text-transform: uppercase;
+        font-weight: lighter;
+        color: #818b95;
+        font-size: 15px;
+      }
+    }
+
+    &-properties {
+      margin: 30px 0 20px 0;
+      text-align: center;
+
+      p {
+        font-size: 14px;
+        line-height: 40px;
+        color: #c9cdd2;
+        text-transform: uppercase;
+        width: 100%;
+        border-top: 1px solid #e2e9f0;
+      }
+    }
+
+    &-button {
+      text-align: center;
+
+      button {
+        background-color: #ffc155;
+        border: #e7ad48 solid 1px;
+        border-radius: 3px;
+        color: #fff;
+        padding: 15px 30px;
+        font-family: Lato, sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-top: 35px;
+        transition: background-color .3s, color .3s;
+
+        &:hover {
+          background-color: #fff;
+          color: #ffc155;
+          cursor: pointer;
+          transition: background-color .3s, color .3s;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .block-product {
+    flex-direction: column;
+    align-items: center;
+
+    .product {
+      width: 60%;
+    }
+  }
+}

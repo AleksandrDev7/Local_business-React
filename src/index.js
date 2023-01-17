@@ -1,13 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './styles/index.scss';
+import Header from './app/header/Header';
+import Home from './app/home/Home';
+import SectionServices from './app/section_services/SectionServices';
 import reportWebVitals from './reportWebVitals';
+import About from "./app/about/About";
+import Price from "./app/price/Price";
+import Work from "./app/work/Work";
+import Reviews from "./app/reviews/Reviews";
+import Newsletter from "./app/newsletter/Newsletter";
+import Footer from "./app/footer/footer";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Header id="header" />
+      <Home id="home"/>
+      <SectionServices id="service"/>
+      <About id="about" />
+      <Price id="price" />
+      <Work id="work"/>
+      <Reviews id="reviews" />
+      <Newsletter id="contact"/>
+      <Footer/>
   </React.StrictMode>
 );
 
